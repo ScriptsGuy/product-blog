@@ -1,35 +1,86 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Typed from "react-typed"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap"
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      isOpen: false,
+    }
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
+  render() {
+    return (
+      <Navbar color="dark" dark expand="md">
+        <div className="container">
+          <NavbarBrand href="/">
+            {" "}
+            <Typed strings={[this.props.siteTitle]} typeSpeed={100} />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink style={{ color: "yellow" }} href="/about">
+                  #Javascript
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{ color: "orange" }} href="/about">
+                  #HTML
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{ color: "#3C99DC" }} href="/about">
+                  #CSS
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{ color: "#66D3FA" }} href="/about">
+                  #React
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{ color: "#E11491" }} href="/about">
+                  #graphql
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{ color: "#fff" }} href="/about">
+                  #Tech
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/about">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/tags">Tags</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </div>
+      </Navbar>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
