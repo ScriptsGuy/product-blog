@@ -1,10 +1,10 @@
 import React from "react"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faHeart } from "@fortawesome/free-solid-svg-icons"
+import { faHeart, faCoffee } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-library.add(fab, faHeart)
+library.add(fab, faHeart, faCoffee)
 
 export default function footer() {
   return (
@@ -17,7 +17,7 @@ export default function footer() {
           justifyContent: "center",
           listStyle: "none",
         }}
-        className="mb-0 pb-3"
+        className="footerlogos mb-0 pb-3"
       >
         <li className="mr-3">
           <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md">
@@ -46,7 +46,9 @@ export default function footer() {
         <span>
           <FontAwesomeIcon color="red" icon={faHeart} />
           {` `}
-          love
+          love and
+          {` `}
+          <FontAwesomeIcon color="brown" icon={faCoffee} />
         </span>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Typed from "react-typed"
+import logo from "../images/logo.png"
 
 import {
   Collapse,
@@ -28,15 +29,16 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <Navbar color="dark" dark expand="md">
+      <Navbar className="mainnav" color="dark" dark expand="md">
         <div className="container">
+          <img className="navlogo" src={logo} alt="" />
           <NavbarBrand href="/">
             {" "}
             <Typed strings={[this.props.siteTitle]} typeSpeed={100} />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="mainnavlist" navbar>
               <NavItem>
                 <NavLink style={{ color: "yellow" }} href="/about">
                   #Javascript

@@ -19,3 +19,21 @@ pre {
 .gatsby-highlight {
   margin-bottom: 25px;
 }
+
+nav.mainnav {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+ul.mainnavlist {
+  margin-left: 20px;
+}
+
+img.navlogo {
+  width: 50px;
+  margin-right: 5px;
+}
+
+ul.footerlogos {
+  padding-left: 20px;
+}
