@@ -12,9 +12,6 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <Row>
-      <Col md="3" className="mt-4 mb-4">
-        <SideBar></SideBar>
-      </Col>
       <Col md="9">
         <StaticQuery
           query={indexQuery}
@@ -38,6 +35,9 @@ const IndexPage = () => (
             )
           }}
         ></StaticQuery>
+      </Col>
+      <Col md="3" className="mt-4 mb-4">
+        <SideBar></SideBar>
       </Col>
     </Row>
   </Layout>

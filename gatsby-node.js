@@ -1,5 +1,6 @@
 const { slugify } = require("./src/util/utilityFunctions")
 const path = require("path")
+const _ = require("lodash")
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
@@ -16,6 +17,7 @@ exports.onCreateNode = ({ node, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const singlePostTemplate = path.resolve("src/templates/single-post.js")
+  const tagPosts = path.resolve("src/templates/tag-posts.js")
 
   return graphql(`
     {
@@ -42,6 +44,27 @@ exports.createPages = ({ actions, graphql }) => {
         component: singlePostTemplate,
         context: {
           slug: node.fields.slug,
+        },
+      })
+    })
+
+    // Get all tags
+    let tags = []
+    _.each(posts, edge => {
+      if (_.get(edge, "node.frontmatter.tags")) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+
+    // Remove duplicates
+    tags = _.uniq(tags)
+
+    tags.forEach(tag => {
+      createPage({
+        path: `/tag/${slugify(tag)}`,
+        component: tagPosts,
+        context: {
+          tag,
         },
       })
     })

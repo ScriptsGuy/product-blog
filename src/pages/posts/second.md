@@ -7,6 +7,8 @@ image: ../../images/pc.jpg
 tags:
   - ruby
   - html
+  - javascript
+  - tech
 ---
 
 لقد اصابني الملل

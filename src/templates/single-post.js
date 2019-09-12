@@ -16,15 +16,8 @@ export default function SinglePost({ data }) {
         {post.title}
       </h1>
       <Row>
-        <Col md="3" className="mt-4 mb-4">
-          <SideBar></SideBar>
-        </Col>
-        <Col md="9" className="mt-4 mb-4">
-          <Card
-            dir="rtl"
-            style={{ textAlign: "right" }}
-            className="shadow p-3  rounded"
-          >
+        <Col md="9" className="pl-0 pr-0 mt-4 mb-4">
+          <Card dir="rtl" style={{ textAlign: "right" }} className="   rounded">
             <Img
               className="card-image-top"
               fluid={post.image.childImageSharp.fluid}
@@ -66,6 +59,9 @@ export default function SinglePost({ data }) {
               </ul>
             </CardBody>
           </Card>
+        </Col>
+        <Col md="3" className="mt-4 mb-4">
+          <SideBar></SideBar>
         </Col>
       </Row>
     </Layout>

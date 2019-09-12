@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Typed from "react-typed"
 import logo from "../images/logo.png"
+import Drop from "./subcomp/dropdown"
 
 import {
   Collapse,
@@ -40,42 +41,37 @@ class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mainnavlist" navbar>
               <NavItem>
-                <NavLink style={{ color: "yellow" }} href="/about">
+                <NavLink style={{ color: "yellow" }} href="/tag/javascript">
                   #Javascript
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{ color: "orange" }} href="/about">
+                <NavLink style={{ color: "orange" }} href="/tag/html">
                   #HTML
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{ color: "#3C99DC" }} href="/about">
+                <NavLink style={{ color: "#3C99DC" }} href="/tag/css">
                   #CSS
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{ color: "#66D3FA" }} href="/about">
+                <NavLink style={{ color: "#66D3FA" }} href="/tag/react">
                   #React
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{ color: "#E11491" }} href="/about">
+                <NavLink style={{ color: "#E11491" }} href="/tag/graphql">
                   #graphql
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{ color: "#fff" }} href="/about">
+                <NavLink style={{ color: "#fff" }} href="/tag/tech">
                   #Tech
                 </NavLink>
               </NavItem>
 
-              <NavItem>
-                <NavLink href="/about">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/tags">Tags</NavLink>
-              </NavItem>
+              <Drop></Drop>
             </Nav>
           </Collapse>
         </div>
