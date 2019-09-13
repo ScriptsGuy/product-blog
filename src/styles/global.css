@@ -1,7 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Cairo&display=swap");
 body {
-  background-color: #fff !important;
+  --bg: white;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: blue;
+  --cardColor: white;
+
+  --hr: hsla(0, 0%, 0%, 0.2);
+  background-color: var(--bg);
   font-family: "Cairo", sans-serif !important;
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: rgb(0, 0, 0);
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: white;
+  --scrollTop: white;
+  --scrollText: rgb(2, 2, 2);
+  --textLink: rgb(243, 147, 21);
+  --spanInfo: rgb(209, 118, 0);
+  --cardColor: rgb(52, 58, 64);
+  --hr: hsla(0, 0%, 100%, 0.2);
+  --aBtn: rgb(239, 187, 53);
+  background-color: var(--bg);
+  color: white;
+}
+
+.form-control {
+  background-color: var(--bg) !important;
+}
+
+div.card {
+  background-color: var(--cardColor);
+}
+div.footer {
+  background-color: var(--cardColor) !important;
+}
+
+main a {
+  color: var(--textLink) !important;
+}
+
+span.text-info {
+  color: var(--spanInfo) !important;
+}
+
+#myBtn {
+  background-color: var(--scrollTop) !important;
+  color: var(--scrollText) !important;
+}
+#myBtn:hover {
+  background-color: var(--aBtn) !important;
+}
+
+a.btn {
+  color: var(--aBtn) !important;
+  border-color: var(--aBtn) !important;
+}
+a.btn:hover {
+  color: var(--bg) !important;
+  border-color: var(--aBtn) !important;
+  background-color: var(--aBtn) !important;
+}
+
+main span.badge {
+  color: var(--bg) !important;
+  background-color: var(--aBtn) !important;
+}
+
+a.icon {
+  color: var(--aBtn) !important;
 }
 
 h1 {
@@ -93,13 +163,13 @@ ul.footerlogos {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: rgb(12, 11, 11);
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #efbb35;
 }

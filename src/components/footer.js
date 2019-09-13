@@ -8,7 +8,7 @@ library.add(fab, faHeart, faCoffee)
 
 export default function footer() {
   return (
-    <div className="pt-3" style={{ backgroundColor: "white" }}>
+    <div className="pt-3 footer" style={{ backgroundColor: "white" }}>
       <h4 className="text-center">Algerian Scripter</h4>
       <p className="text-center">Follow me on social media</p>
       <ul
@@ -19,23 +19,35 @@ export default function footer() {
         }}
         className="footerlogos mb-0 pb-3"
       >
-        <li className="mr-3">
-          <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md">
+        <li className="mr-3 icon">
+          <a
+            className=" icon"
+            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+          >
             <FontAwesomeIcon size="2x" icon={["fab", "facebook-f"]} />
           </a>
         </li>
-        <li className="mr-3">
-          <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md">
+        <li className="mr-3 icon">
+          <a
+            className=" icon"
+            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+          >
             <FontAwesomeIcon size="2x" icon={["fab", "twitter"]} />
           </a>
         </li>
-        <li className="mr-3">
-          <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md">
+        <li className="mr-3 icon">
+          <a
+            className=" icon"
+            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+          >
             <FontAwesomeIcon size="2x" icon={["fab", "linkedin-in"]} />
           </a>
         </li>
-        <li className="mr-3">
-          <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md">
+        <li className="mr-3 icon">
+          <a
+            className=" icon"
+            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+          >
             <FontAwesomeIcon size="2x" icon={["fab", "github"]} />
           </a>
         </li>

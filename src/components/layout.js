@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import Header from "./header"
 import Footer from "./footer"
+import ScrollButton from "../components/subcomp/scrollbutton"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,9 +21,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <scrollTop></scrollTop>
-      {}
-
+      <ScrollButton></ScrollButton>
       <div
         style={{
           marginLeft: 20,

@@ -3,6 +3,7 @@ import React from "react"
 import Typed from "react-typed"
 import logo from "../images/logo.png"
 import Drop from "./subcomp/dropdown"
+import Dark from "./subcomp/darkToggler"
 
 import {
   Collapse,
@@ -72,6 +73,7 @@ class Header extends React.Component {
               </NavItem>
 
               <Drop></Drop>
+              <Dark></Dark>
             </Nav>
           </Collapse>
         </div>
