@@ -3,9 +3,13 @@ body {
   --bg: white;
   --textNormal: #222;
   --textTitle: #222;
-  --textLink: blue;
-  --cardColor: white;
+  --scrollTop: black;
+  --scrollText: white;
+  --textLink: #007bff;
+  --spanInfo: #17a2b8;
 
+  --cardColor: white;
+  --aBtn: #007bff;
   --hr: hsla(0, 0%, 0%, 0.2);
   background-color: var(--bg);
   font-family: "Cairo", sans-serif !important;
@@ -171,5 +175,5 @@ ul.footerlogos {
 }
 
 #myBtn:hover {
-  background-color: #efbb35;
+  background-color: #efbb35 !important;
 }
