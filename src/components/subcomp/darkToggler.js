@@ -6,7 +6,7 @@ export default class darkToggler extends Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label style={{ color: "white", marginTop: 8, marginLeft: 350 }}>
+          <label style={{ color: "white", marginTop: 8, marginLeft: 10 }}>
             <input
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
