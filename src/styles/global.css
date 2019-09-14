@@ -242,12 +242,16 @@ input:checked[type="checkbox"]:before {
     margin-bottom: 10px !important;
     margin-left: 700px !important;
   }
-}
-@media only screen and (max-width: 992px) {
   p {
     font-size: 15px;
   }
   div.gatsby-highlight {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  label {
+    margin-bottom: 10px !important;
+    margin-left: 300px !important;
   }
 }
