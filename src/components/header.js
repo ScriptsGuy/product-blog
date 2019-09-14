@@ -31,7 +31,7 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <Navbar className="mainnav" color="dark" dark expand="md">
+      <Navbar className="mainnav" color="dark" dark expand="lg">
         <div className="container">
           <img className="navlogo" src={logo} alt="" />
           <NavbarBrand href="/">
@@ -74,6 +74,15 @@ class Header extends React.Component {
 
               <Drop></Drop>
               <Dark></Dark>
+              <span
+                style={{
+                  marginTop: 8,
+                  marginLeft: 7,
+                }}
+                className="nightMode"
+              >
+                night mode
+              </span>
             </Nav>
           </Collapse>
         </div>

@@ -5,11 +5,23 @@ export default class ScrollButton extends Component {
   componentDidMount() {
     //Get the button
     const mybutton = document.getElementById("myBtn")
+    const recentPosts = document.getElementById("recentPosts")
+    const sticky = recentPosts.offsetTop
 
-    // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {
+      myFunction()
       scrollFunction()
     }
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        recentPosts.classList.add("sticky")
+      } else {
+        recentPosts.classList.remove("sticky")
+      }
+    }
+
+    // When the user scrolls down 20px from the top of the document, show the button
 
     function scrollFunction() {
       if (

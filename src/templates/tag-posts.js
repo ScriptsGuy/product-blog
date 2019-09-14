@@ -21,7 +21,7 @@ const tagPosts = ({ data, pageContext }) => {
         {pageHeader}
       </h1>
       <Row>
-        <Col md="9">
+        <Col className="mainContent" md="9">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Post
               key={node.id}
@@ -35,7 +35,7 @@ const tagPosts = ({ data, pageContext }) => {
             />
           ))}
         </Col>
-        <Col md="3" className="mt-4 mb-4">
+        <Col md="3" className="sidebar mt-4 mb-4">
           <SideBar></SideBar>
         </Col>
       </Row>

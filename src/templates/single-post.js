@@ -16,7 +16,7 @@ export default function SinglePost({ data }) {
         {post.title}
       </h1>
       <Row>
-        <Col md="9" className="pl-0 pr-0 mt-4 mb-4">
+        <Col md="9" className="mainContent pl-0 pr-0 mt-4 mb-4">
           <Card dir="rtl" style={{ textAlign: "right" }} className="   rounded">
             <Img
               className="card-image-top"
@@ -60,7 +60,7 @@ export default function SinglePost({ data }) {
             </CardBody>
           </Card>
         </Col>
-        <Col md="3" className="mt-4 mb-4">
+        <Col md="3" className=" sidebar mt-4 mb-4">
           <SideBar></SideBar>
         </Col>
       </Row>

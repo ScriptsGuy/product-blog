@@ -52,7 +52,7 @@ export default function footer() {
           </a>
         </li>
       </ul>
-      <div className="text-center mb-2">
+      <div className="text-center pb-2">
         © {new Date().getFullYear()}, Built with
         {` `}
         <span>
