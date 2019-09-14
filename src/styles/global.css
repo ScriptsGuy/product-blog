@@ -249,9 +249,15 @@ input:checked[type="checkbox"]:before {
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 700px) {
+  label {
+    margin-bottom: 10px !important;
+    margin-left: 500px !important;
+  }
+}
 @media only screen and (max-width: 500px) {
   label {
     margin-bottom: 10px !important;
-    margin-left: 300px !important;
+    margin-left: 400px !important;
   }
 }
