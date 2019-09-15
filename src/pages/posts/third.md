@@ -1,7 +1,7 @@
 ---
 title: blogging
 date: "2015-05-06T23:46:37.121Z"
-author: "Salah eddin berriani"
+author: "صلاح الدين برياني"
 description: Did you know that "despite its name, salted duck eggs can also be made from chicken eggs.
 image: ../../images/setup.jpg
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-author: "Salah eddin berriani"
+author: "صلاح الدين برياني"
 description: The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text.
 image: ../../images/pc.jpg
 tags:

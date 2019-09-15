@@ -1,44 +1,33 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Row, Col } from "reactstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/Post"
-import SideBar from "../components/SideBar"
 
 const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `${totalCount} منشور${
+  const pageTitle = `${totalCount} منشور${
     totalCount === 1 ? "" : "ات"
   } متعلقة ب "${tag}"`
 
   return (
-    <Layout>
-      <SEO title={pageHeader} />
-      <h1 dir="rtl" className="text-center mb-4 mt-4">
-        {pageHeader}
-      </h1>
-      <Row>
-        <Col className="mainContent" md="9">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Post
-              key={node.id}
-              slug={node.fields.slug}
-              title={node.frontmatter.title}
-              author={node.frontmatter.author}
-              date={node.frontmatter.date}
-              body={node.excerpt}
-              tags={node.frontmatter.tags}
-              fluid={node.frontmatter.image.childImageSharp.fluid}
-            />
-          ))}
-        </Col>
-        <Col md="3" className="sidebar mt-4 mb-4">
-          <SideBar></SideBar>
-        </Col>
-      </Row>
+    <Layout pageTitle={pageTitle} tweaks="mainContent">
+      <SEO title={pageTitle} />
+
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <Post
+          key={node.id}
+          slug={node.fields.slug}
+          title={node.frontmatter.title}
+          author={node.frontmatter.author}
+          date={node.frontmatter.date}
+          body={node.excerpt}
+          tags={node.frontmatter.tags}
+          fluid={node.frontmatter.image.childImageSharp.fluid}
+        />
+      ))}
     </Layout>
   )
 }

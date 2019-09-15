@@ -17,7 +17,6 @@ export default function Post({
   description,
   slug,
   date,
-  body,
   fluid,
   tags,
 }) {
@@ -39,7 +38,7 @@ export default function Post({
             </h4>
           </CardTitle>
           <CardSubtitle>
-            <span className="text-info">{date}</span> by{" "}
+            <span className="text-info">{date}</span> من قبل{" "}
             <span className="text-info">{author}</span>
           </CardSubtitle>
           <CardText>{description}</CardText>
@@ -65,7 +64,10 @@ export default function Post({
               </li>
             ))}
           </ul>
-          <Link to={slug} className="btn btn-outline-primary float-left">
+          <Link
+            to={slug}
+            className="readMore btn btn-outline-primary float-left"
+          >
             Read more
           </Link>
         </CardBody>
