@@ -18,6 +18,14 @@ body {
   --cardColor: white;
   --aBtn: #007bff;
   --hr: hsla(0, 0%, 0%, 0.2);
+  --paginAclink: white;
+  --pageLink: #007bff;
+
+  --paginbg: #fbfbfb;
+  --paginbgborder: #007bff;
+  --activepaginbg: #007bff;
+  --activepaginbgborder: #007bff;
+
   background-color: var(--bg);
   font-family: "Cairo", sans-serif !important;
 }
@@ -31,7 +39,7 @@ body.dark {
   --textTitle: white;
   --scrollTop: white;
   --scrollText: rgb(2, 2, 2);
-  --textLink: rgb(243, 147, 21);
+  --textLink: #f39315;
   --spanInfo: rgb(209, 118, 0);
   --cardColor: rgb(52, 58, 64);
   --h1color: linear-gradient(
@@ -43,14 +51,43 @@ body.dark {
 
   --hr: hsla(0, 0%, 100%, 0.2);
   --aBtn: rgb(239, 187, 53);
+  --paginAclink: white;
+
+  --pageLink: black;
+  --paginbg: #efbb35;
+  --paginbgborder: #efbb35;
+  --activepaginbg: #000000;
+  --activepaginbgborder: #efbb35;
   background-color: var(--bg);
   color: white;
+}
+
+.page-item .page-link {
+  background-color: var(--paginbg) !important;
+  border-color: var(--paginbgborder) !important;
+}
+.page-item.active .page-link {
+  background-color: var(--activepaginbg) !important;
+  border-color: var(--activepaginbgborder) !important;
+}
+
+.page-link {
+  color: var(--pageLink) !important;
+}
+.paginationactiveLink {
+  color: var(--paginAclink) !important;
 }
 
 h1 {
   background: var(--h1color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+nav.navigation {
+  margin: auto !important;
+  width: 50% !important;
+  padding: 10px !important;
 }
 
 span.nightMode {

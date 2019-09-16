@@ -37,7 +37,7 @@ class Header extends React.Component {
           <NavbarBrand href="/">
             {" "}
             <Typed
-              style={{ fontSize: 23 }}
+              style={{ fontSize: 24 }}
               strings={[this.props.siteTitle]}
               typeSpeed={100}
             />

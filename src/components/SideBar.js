@@ -78,7 +78,10 @@ export default class SideBar extends Component {
 
 const sidebarQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: 8
+    ) {
       edges {
         node {
           id
