@@ -5,7 +5,6 @@ author: "صلاح الدين برياني"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 image: ../../images/setup.jpg
 tags:
-  - javascript
   - react
   - express
   - nextjs
