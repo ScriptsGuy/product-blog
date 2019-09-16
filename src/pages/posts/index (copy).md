@@ -7,7 +7,6 @@ image: ../../images/setup.jpg
 tags:
   - javascript
   - react
-  - mongodb
   - gatsby
 ---
 
