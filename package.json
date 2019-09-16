@@ -10,6 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
+    "clipboard": "^2.0.4",
     "gatsby": "^2.15.9",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-catch-links": "^2.1.8",

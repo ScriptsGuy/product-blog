@@ -36,7 +36,11 @@ class Header extends React.Component {
           <img className="navlogo" src={logo} alt="" />
           <NavbarBrand href="/">
             {" "}
-            <Typed strings={[this.props.siteTitle]} typeSpeed={100} />
+            <Typed
+              style={{ fontSize: 23 }}
+              strings={[this.props.siteTitle]}
+              typeSpeed={100}
+            />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -81,7 +85,7 @@ class Header extends React.Component {
                 }}
                 className="nightMode"
               >
-                night mode
+                Night Mode
               </span>
             </Nav>
           </Collapse>

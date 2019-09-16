@@ -9,7 +9,7 @@ library.add(fab, faHeart, faCoffee)
 export default function footer() {
   return (
     <div className="pt-3 footer" style={{ backgroundColor: "white" }}>
-      <h4 className="text-center">Algerian Scripter</h4>
+      <h3 className="text-center">Scripts</h3>
       <p className="text-center">Follow me on social media</p>
       <ul
         style={{

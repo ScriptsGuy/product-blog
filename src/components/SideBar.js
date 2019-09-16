@@ -40,7 +40,7 @@ export default class SideBar extends Component {
         <Card className=" shadow-sm mt-3  rounded" id="recentPosts">
           <CardBody>
             <CardTitle className="text-center text-uppercase mb-3">
-              Recent Posts
+              اخر المنشورات
             </CardTitle>
             <StaticQuery
               query={sidebarQuery}

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Algerian_Scripter`,
+    title: `Scripts`,
     description: `blog for latest tutorial about programming and tech and hardware`,
     author: `SALAH EDDIN BERRIANI`,
   },
@@ -102,11 +102,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ALGERIAN SCRIPTER`,
+        short_name: `ALGERIAN SCRIPTER`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#efbb35`,
+        theme_color: `#efbb35`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
