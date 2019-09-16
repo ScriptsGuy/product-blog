@@ -6,8 +6,7 @@ description: This is a custom description for SEO and Open Graph purposes, rathe
 image: ../../images/setup.jpg
 tags:
   - javascript
-  - react
-    - mongodb
+  - mongodb
   - gatsby
 ---
 
