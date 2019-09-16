@@ -317,7 +317,7 @@ input:checked[type="checkbox"]:before {
   .navbar-brand {
     position: absolute;
     left: 55px;
-    top: -2px;
+    top: -3px;
   }
 }
 @media only screen and (max-width: 600px) {
