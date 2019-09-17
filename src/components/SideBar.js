@@ -11,7 +11,13 @@ export default class SideBar extends Component {
             <CardTitle className="text-center text-uppercase mb-3">
               newsletter
             </CardTitle>
-            <Form className="text-center">
+            <Form
+              name="Contact Form"
+              method="POST"
+              data-netlify="true"
+              className="text-center"
+            >
+              <input type="hidden" name="form-name" value="Contact Form" />
               <FormGroup>
                 <Input
                   type="email"
@@ -19,7 +25,10 @@ export default class SideBar extends Component {
                   placeholder="Your emial adress"
                 ></Input>
               </FormGroup>
-              <button className="btn btn btn-outline-success text-uppercase">
+              <button
+                type="submit"
+                className="btn btn btn-outline-success text-uppercase"
+              >
                 subscribe
               </button>
             </Form>
