@@ -37,12 +37,13 @@ const Layout = ({ children, pageTitle, tweaks }) => {
             {pageTitle}
           </h1>
           <Row>
-            <Col className={tweaks} md="9">
-              {children}
-            </Col>
             <Col md="3" className=" sidebar mt-4 mb-4">
               <SideBar></SideBar>
             </Col>
+            <Col className={tweaks} md="9">
+              {children}
+            </Col>
+         
           </Row>
         </main>
         {/* <footer>
