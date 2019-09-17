@@ -25,6 +25,7 @@ body {
   --paginbgborder: #007bff;
   --activepaginbg: #007bff;
   --activepaginbgborder: #007bff;
+  --navBorderBottom: #27b0ff;
 
   background-color: var(--bg);
   font-family: "Cairo", sans-serif !important;
@@ -58,8 +59,14 @@ body.dark {
   --paginbgborder: #efbb35;
   --activepaginbg: #000000;
   --activepaginbgborder: #efbb35;
+  --navBorderBottom: #efbb35;
   background-color: var(--bg);
   color: white;
+}
+
+.mainnav {
+  border-bottom-style: solid;
+  border-bottom-color: var(--navBorderBottom);
 }
 
 .page-item .page-link {

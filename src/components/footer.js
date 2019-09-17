@@ -22,32 +22,26 @@ export default function footer() {
         <li className="mr-3 icon">
           <a
             className=" icon"
-            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+            href="https://www.facebook.com/Scripts7/?ref=aymt_homepage_panel&eid=ARDHh-j0TwGZf4TBWdXkfZ3p7sTaXVzyEJifP2N2X9gbXkxPAab7vFfvNzQyC-E9-DuQMq-owvQatQ8C"
           >
             <FontAwesomeIcon size="2x" icon={["fab", "facebook-f"]} />
           </a>
         </li>
         <li className="mr-3 icon">
-          <a
-            className=" icon"
-            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
-          >
+          <a className=" icon" href="https://twitter.com/Salah75082802">
             <FontAwesomeIcon size="2x" icon={["fab", "twitter"]} />
           </a>
         </li>
         <li className="mr-3 icon">
           <a
             className=" icon"
-            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
+            href="https://www.linkedin.com/in/salah-berriani-26677318a/"
           >
             <FontAwesomeIcon size="2x" icon={["fab", "linkedin-in"]} />
           </a>
         </li>
         <li className="mr-3 icon">
-          <a
-            className=" icon"
-            href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md"
-          >
+          <a className=" icon" href="https://github.com/SalahEddinBerriani">
             <FontAwesomeIcon size="2x" icon={["fab", "github"]} />
           </a>
         </li>
