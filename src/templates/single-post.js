@@ -12,7 +12,7 @@ export default function SinglePost({ data }) {
     <Layout pageTitle={post.title} tweaks="mainContent pl-0 pr-0 mt-4 mb-4">
       <SEO title={post.title}></SEO>
 
-      <Card dir="rtl" style={{ textAlign: "right" }} className="   rounded">
+      <Card dir="rtl" style={{ textAlign: "right" }} className="shadow-sm rounded">
         <Img
           className="card-image-top"
           fluid={post.image.childImageSharp.fluid}
