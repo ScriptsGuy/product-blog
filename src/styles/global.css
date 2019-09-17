@@ -2,6 +2,7 @@
 body {
   --white: white;
   --bg: white;
+  --bodybg: #eee;
   --textNormal: #222;
   --textTitle: #222;
   --scrollTop: black;
@@ -27,7 +28,7 @@ body {
   --activepaginbgborder: #007bff;
   --navBorderBottom: #27b0ff;
 
-  background-color: var(--bg);
+  background-color: var(--bodybg) !important;
   font-family: "Cairo", sans-serif !important;
 }
 
@@ -36,6 +37,7 @@ body.dark {
   --white: white;
 
   --bg: rgb(0, 0, 0);
+  --bodybg: rgb(0, 0, 0);
   --textNormal: rgba(255, 255, 255, 0.88);
   --textTitle: white;
   --scrollTop: white;

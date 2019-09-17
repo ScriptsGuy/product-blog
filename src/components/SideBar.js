@@ -63,7 +63,7 @@ export default class SideBar extends Component {
                       key={node.id}
                     >
                       <Link to={node.fields.slug}>
-                        <h5>{node.frontmatter.title}</h5>
+                        <h6>{node.frontmatter.title}</h6>
                       </Link>
                       <hr
                         style={{
