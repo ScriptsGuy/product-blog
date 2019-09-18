@@ -10,7 +10,7 @@ export default function SinglePost({ data }) {
   const post = data.markdownRemark.frontmatter
   return (
     <Layout pageTitle={post.title} tweaks="mainContent pl-0 pr-0 mt-4 mb-4">
-      <SEO title={post.title}></SEO>
+      <SEO description={post.description}  title={post.title}></SEO>
 
       <Card dir="rtl" style={{ textAlign: "right" }} className="shadow-sm rounded">
         <Img
@@ -68,6 +68,7 @@ export const postQuery = graphql`
         author
         date(formatString: "MMM Do YYYY")
         tags
+        description
         image {
           childImageSharp {
             fluid(maxWidth: 700) {
