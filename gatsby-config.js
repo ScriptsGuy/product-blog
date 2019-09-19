@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Scripts`,
+    title: `AlgerianScripter`,
     description: `blog for latest tutorial about programming and tech and hardware`,
     author: `SALAH EDDIN BERRIANI`,
   },
