@@ -11,7 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "clipboard": "^2.0.4",
-    "gatsby": "^2.15.9",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-catch-links": "^2.1.8",
     "gatsby-plugin-dark-mode": "^1.1.0",
